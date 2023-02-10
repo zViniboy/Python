@@ -24,10 +24,10 @@ evidencia_path = fr'{caminho_raiz}\Evidencias/'
 Quiver = r"http://svc.itfinanceiro:BD5FZrXa@quiver.hom.mdsinsure.com/fastBoot/menuFast.Aspx"
 
 # CAMINHO EXTENSÃO QUIVER
-extensao_quiver = fr"{caminho_raiz}\ROBOS/3.4.33_0.crx"
+extensao_quiver = fr"{caminho_raiz}/3.4.33_0.crx"
 
 # CAMINHO EXTENSÃO CHROME
-chrome_driver = fr"{caminho_raiz}\ROBOS/chromedriver.exe"
+chrome_driver = fr"{caminho_raiz}/chromedriver.exe"
 
 # Database
 database = 'MDS_COTADOR'
