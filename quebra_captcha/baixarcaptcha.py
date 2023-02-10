@@ -32,8 +32,8 @@ chrome_options.add_argument("--start-maximized")
 chrome_options.add_experimental_option("prefs", {
     "download.default_directory": caminho_captcha , "download.prompt_for_download": False, "plugins.always_open_pdf_externally": True,
     })
-driver = webdriver.Chrome(options = chrome_options,service=Service(executable_path=r'C:\WEBSITES\credimob\robos\rpas\proposta\chromedriver.exe'))
-wait = WebDriverWait(driver, 10)
+driver = webdriver.Chrome(options=chrome_options, service=Service(GC.chrome_driver))
+wait = WebDriverWait(driver, 15)
 driver.get('https://wspf.banco.bradesco/wsImoveis/AreaRestrita/Default.aspx?ReturnUrl=%2fwsImoveis%2fAreaRestrita%2fConteudo%2fHome.aspx') 
 
 img = driver.find_element(By.XPATH,'/html/body/form/div[3]/section/div/section[2]/div[2]/fieldset/div[4]/div/span[1]/img')

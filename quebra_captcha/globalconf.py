@@ -22,7 +22,10 @@ caminho_captcha = r'C:\WEBSITES\credimob\robos\rpas\quebra_captcha\bdcaptcha/'
 # quiver = "http://svc.itendosso2:pK7GQO4A@quiver.hom.mdsinsure.com"
 quiver = "http://svc.itendosso:WTR8nbf!NF@quiver.hom.mdsinsure.com"
 
+caminho_raiz = r'C:\WEBSITES\MDS_COTADOR'
 
+# CAMINHO EXTENSÃO CHROME
+chrome_driver = fr"{caminho_raiz}\ROBOS/chromedriver.exe"
 
 #tabelas
 cockpit = 'cockpit_mds_endosso'
