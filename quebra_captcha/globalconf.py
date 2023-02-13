@@ -22,14 +22,5 @@ caminho_captcha = r'C:\WEBSITES\credimob\robos\rpas\quebra_captcha\bdcaptcha/'
 # quiver = "http://svc.itendosso2:pK7GQO4A@quiver.hom.mdsinsure.com"
 quiver = "http://svc.itendosso:WTR8nbf!NF@quiver.hom.mdsinsure.com"
 
-
-
-#tabelas
-cockpit = 'cockpit_mds_endosso'
-produtoAutomovel = 'produtoAutomovel_mds_endosso'
-rotina = 'statusRotinaEndosso'
-
-#Caminho do robô
-
-roboEndosso = './endosso_main.py'
-roboreprocessa = './robo_reprocessa.py'
+region = 'brazilsouth'
+key = 'b2695ca37c214c6f8f4146cc55e0e536'

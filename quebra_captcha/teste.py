@@ -6,12 +6,11 @@ from msrest.authentication import CognitiveServicesCredentials
 import time
 import os
 import os.path
-region = 'brazilsouth'
-key = 'b2695ca37c214c6f8f4146cc55e0e536'
+import globalconf as GC
 
-credentials = CognitiveServicesCredentials(key)
+credentials = CognitiveServicesCredentials(GC.key)
 client = ComputerVisionClient(
-    endpoint="https://" + region + ".api.cognitive.microsoft.com/",
+    endpoint="https://" + GC.region + ".api.cognitive.microsoft.com/",
     credentials=credentials
 )
 with open(os.path.join('ajeitado', "captcha1.png"), "rb") as image_stream:
