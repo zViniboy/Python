@@ -32,7 +32,7 @@ chrome_options.add_argument("--start-maximized")
 chrome_options.add_experimental_option("prefs", {
     "download.default_directory": caminho_captcha , "download.prompt_for_download": False, "plugins.always_open_pdf_externally": True,
     })
-driver = webdriver.Chrome(options=chrome_options, service=Service(GC.chrome_driver))
+driver = webdriver.Chrome(options=chrome_options, service=Service(r'C:\Websites\vinicius\Testes_Infinitos\quebra_captcha/chromedriver.exe'))
 wait = WebDriverWait(driver, 15)
 driver.get('https://wspf.banco.bradesco/wsImoveis/AreaRestrita/Default.aspx?ReturnUrl=%2fwsImoveis%2fAreaRestrita%2fConteudo%2fHome.aspx') 
 
@@ -40,10 +40,6 @@ img = driver.find_element(By.XPATH,'/html/body/form/div[3]/section/div/section[2
 src = img.get_attribute('src')
 
 # download the image
-urllib.request.urlretrieve(src,"caminho_captcha.png")
+urllib.request.urlretrieve(src,"quebra_captcha/bdcaptcha/caminho_captcha.png")
 
 sleep(5)
-
-
-
-

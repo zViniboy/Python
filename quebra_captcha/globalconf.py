@@ -1,45 +1,35 @@
 server = '200.98.204.254'
-database = 'fulllllkejlgb\dhk'
+database = 'REMAX_CREDITO'
 user = 'sa'
 password = '!Itpower@' 
 
 # server = 'amss.com.br'
 # database = 'MDS'
 # user = 'sa'
-# password = 'Prod@189723n'
+# password = 'Prod@189723n' 
+                #D
+default_dir = r'D:\VisualStudio\app\RPAENDOSSO\RPAENDOSSO\modelo2'
 
-from lib2to3.pgen2 import driver
+# caminho_pdf = 'E:\WEBSITES\MDS\MDS\SolicitacaoEndosso2\PDFs'
+#caminho_pdf = '/MDS/bmss_zurich/SolicitacaoEndosso2/MDS_ENDOSSO/PDFs'
+caminho_pdf = r'E:\Websites\MDS\bmss_zurich\SolicitacaoEndosso2\MDS_ENDOSSO\PDFs/'
 
-# CAMINHO RAIZ
-caminho_raiz = r'C:\Websites\vinicius\Testes_Infinitos'
+evidencia_path = r'C:\WEBSITES\credimob\robos\rpas\Evidencias/'
+# evidencia_path = 'C:\WEBSITES\MDS\MDS\CockpitRs2\Evidencias'
 
-# GUARDA O CAMINHO DO RELATÓRIO
-caminho_captcha = fr'{caminho_raiz}\quebra_captcha\bdcaptcha/'
+caminho_captcha = r'C:\WEBSITES\credimob\robos\rpas\quebra_captcha\bdcaptcha/'
+#Hom
+# quiver = "http://svc.itendosso2:pK7GQO4A@quiver.hom.mdsinsure.com"
+quiver = "http://svc.itendosso:WTR8nbf!NF@quiver.hom.mdsinsure.com"
 
-# GUARDA O CAMINHO DO EXCEL
-# GUARDA O CAMINHO DA EVIDÊNCIA
-evidencia_path = fr'{caminho_raiz}\Evidencias/'
 
-# CAMINHO QUIVER
-Quiver = r"http://svc.itfinanceiro:BD5FZrXa@quiver.hom.mdsinsure.com/fastBoot/menuFast.Aspx"
 
-# CAMINHO EXTENSÃO QUIVER
-extensao_quiver = fr"{caminho_raiz}\quebra_captcha/3.4.33_0.crx"
+#tabelas
+cockpit = 'cockpit_mds_endosso'
+produtoAutomovel = 'produtoAutomovel_mds_endosso'
+rotina = 'statusRotinaEndosso'
 
-# CAMINHO EXTENSÃO CHROME
-chrome_driver = fr"{caminho_raiz}\quebra_captcha/chromedriver.exe"
+#Caminho do robô
 
-# Database
-database = 'MDS_COTADOR'
-
-# Servidor
-server = '200.98.204.254'
-
-# UserServer
-user = 'sa'
-
-# SenhaServer
-password = '!Itpower@'
-
-# LatsPass
-last_pass = fr"{caminho_raiz}\ROBOS/LastPass.crx"
+roboEndosso = './endosso_main.py'
+roboreprocessa = './robo_reprocessa.py'
