@@ -1,26 +1,29 @@
-server = '200.98.204.254'
-database = 'REMAX_CREDITO'
-user = 'sa'
-password = '!Itpower@' 
+from dotenv import load_dotenv
+from os import getenv
 
-# server = 'amss.com.br'
-# database = 'MDS'
-# user = 'sa'
-# password = 'Prod@189723n' 
-                #D
-default_dir = r'D:\VisualStudio\app\RPAENDOSSO\RPAENDOSSO\modelo2'
+load_dotenv()  # carrega as variáveis de ambiente do arquivo .env
 
-# caminho_pdf = 'E:\WEBSITES\MDS\MDS\SolicitacaoEndosso2\PDFs'
-#caminho_pdf = '/MDS/bmss_zurich/SolicitacaoEndosso2/MDS_ENDOSSO/PDFs'
-caminho_pdf = r'E:\Websites\MDS\bmss_zurich\SolicitacaoEndosso2\MDS_ENDOSSO\PDFs/'
+# Acesse as variáveis de ambiente com a função `os.getenv()`
+server = getenv('server')
+database = getenv('database')
+user = getenv('user')
+password = getenv('password')
 
-evidencia_path = r'C:\WEBSITES\credimob\robos\rpas\Evidencias/'
-# evidencia_path = 'C:\WEBSITES\MDS\MDS\CockpitRs2\Evidencias'
+# server = getenv('server')
+# database = getenv('database')
+# user = getenv('user')
+# password = getenv('password')
 
-caminho_captcha = r'C:\WEBSITES\credimob\robos\rpas\quebra_captcha\bdcaptcha/'
-#Hom
-# quiver = "http://svc.itendosso2:pK7GQO4A@quiver.hom.mdsinsure.com"
-quiver = "http://svc.itendosso:WTR8nbf!NF@quiver.hom.mdsinsure.com"
+default_dir = getenv('default_dir')
 
-region = 'brazilsouth'
-key = 'b2695ca37c214c6f8f4146cc55e0e536'
+caminho_pdf = getenv('caminho_pdf')
+
+evidencia_path = getenv('evidencia_path')
+# evidencia_path = getenv('evidencia_path')
+
+caminho_captcha = getenv('caminho_captcha')
+
+region = getenv('region')
+key = getenv('key')
+
+

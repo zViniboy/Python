@@ -1,1 +1,29 @@
+
+# Arquivos de backup e arquivos temporários
+*~
+*.swp
+*.bak
+
+
+# Arquivos de log e cache
+log/
+logs/
+cache/
+caches/
+__pycache__/
+
+# Arquivos gerados por ferramentas de construção
+build/
+dist/
+python_modules/
+bower_components/
+target/
+
+# Arquivos de configuração
+.env
+config/
 globalconf.py
+
+# Arquivos de dependências do projeto
+pip-lock.txt
+yarn.lock
