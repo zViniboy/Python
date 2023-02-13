@@ -22,7 +22,6 @@ target/
 # Arquivos de configuração
 .env
 config/
-globalconf.py
 
 # Arquivos de dependências do projeto
 pip-lock.txt
