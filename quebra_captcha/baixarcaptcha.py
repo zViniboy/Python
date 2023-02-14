@@ -40,6 +40,6 @@ img = driver.find_element(By.XPATH,'/html/body/form/div[3]/section/div/section[2
 src = img.get_attribute('src')
 
 # download the image
-urllib.request.urlretrieve(src,"quebra_captcha/bdcaptcha/caminho_captcha.png")
+urllib.request.urlretrieve(src,"caminho_captcha.png")
 
 sleep(5)
