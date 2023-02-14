@@ -14,13 +14,6 @@ password = getenv('password')
 # user = getenv('user')
 # password = getenv('password')
 
-default_dir = getenv('default_dir')
-
-caminho_pdf = getenv('caminho_pdf')
-
-evidencia_path = getenv('evidencia_path')
-# evidencia_path = getenv('evidencia_path')
-
 caminho_captcha = getenv('caminho_captcha')
 
 region = getenv('region')
